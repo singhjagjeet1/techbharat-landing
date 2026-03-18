@@ -1,148 +1,67 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Poppins;
-}
-
-body{
-background:#f5f7fb;
-}
-
-header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 10%;
-background:white;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-position:sticky;
-top:0;
-}
-
-nav a{
-margin-left:20px;
-text-decoration:none;
-color:#333;
-font-weight:500;
-}
-
-.hero{
-height:90vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-background:linear-gradient(135deg,#6a11cb,#2575fc);
-color:white;
-}
-
-.hero h1{
-font-size:50px;
-}
-
-.hero p{
-margin-top:10px;
-font-size:20px;
-}
-
-.hero-buttons{
-margin-top:20px;
-}
-
-button{
-padding:12px 25px;
-border:none;
-border-radius:30px;
-margin:10px;
-cursor:pointer;
-font-weight:600;
-}
-
-.hero button{
-background:white;
-color:#2575fc;
-}
-
-.about{
-padding:80px 10%;
-text-align:center;
-}
-
-.features{
-margin-top:30px;
-display:flex;
-justify-content:center;
-gap:30px;
-flex-wrap:wrap;
-}
-
-.feature{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-
-#courses{
-padding:80px 10%;
-text-align:center;
-background:#fafafa;
-}
-
-.course-container{
-display:flex;
-justify-content:center;
-gap:30px;
-flex-wrap:wrap;
+/* Live Batch Section */
+.live-batch{
 margin-top:40px;
+text-align:center;
+}
+
+.live-banner{
+margin:30px auto;
+padding:40px;
+max-width:700px;
+border-radius:15px;
+color:white;
+background:linear-gradient(135deg,#ff512f,#dd2476);
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.live-banner h2{
+font-size:28px;
+}
+
+.live-banner p{
+margin-top:10px;
+font-size:16px;
+}
+
+.live-banner button{
+margin-top:15px;
+background:white;
+color:#dd2476;
+font-weight:bold;
+}
+
+
+/* Recorded Section */
+.recorded-section{
+margin-top:60px;
+text-align:center;
 }
 
 .course-card{
 background:white;
-padding:30px;
-width:250px;
-border-radius:10px;
+padding:25px;
+width:260px;
+border-radius:12px;
 box-shadow:0 10px 20px rgba(0,0,0,0.1);
 transition:0.3s;
 }
 
+.course-card h4{
+margin-bottom:10px;
+}
+
+.course-card p{
+font-size:14px;
+color:#555;
+}
+
+.course-card button{
+margin-top:10px;
+background:#2575fc;
+color:white;
+}
+
 .course-card:hover{
 transform:translateY(-10px);
-}
-
-#youtube{
-padding:80px 10%;
-text-align:center;
-}
-
-.video-container{
-margin-top:30px;
-}
-
-.cta{
-padding:80px;
-text-align:center;
-background:linear-gradient(135deg,#2575fc,#6a11cb);
-color:white;
-}
-
-footer{
-text-align:center;
-padding:20px;
-background:#111;
-color:white;
-}
-
-@media(max-width:768px){
-
-.hero h1{
-font-size:32px;
-}
-
-header{
-flex-direction:column;
-}
-
+box-shadow:0 15px 30px rgba(0,0,0,0.2);
 }
