@@ -1,19 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TechBharat</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+<h2>TechBharat</h2>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#courses">Courses</a>
+<a href="#youtube">YouTube</a>
+</nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+<h1>Learn Testing & Backend Skills</h1>
+<p>Manual • API • Automation (Playwright)</p>
+
+<button onclick="visitWebsite()">Visit Website</button>
+</section>
+
+<!-- COURSES SECTION -->
 <section id="courses">
 
 <h2>Our Courses</h2>
 
-<!-- 🔥 Live Batches Section -->
+<!-- LIVE BATCH -->
 <div class="live-batch">
 
 <h3>🚀 Live & Upcoming Batches</h3>
 
 <div class="live-banner">
 
-<h2>🔥 Full Stack Testing Batch - Live Now</h2>
-
-<p>Manual + API + Automation (Playwright)</p>
-
-<p>Start Date: 1st April | Limited Seats</p>
+<h2>🔥 Full Stack Testing Batch</h2>
+<p>Manual + API + Playwright Automation</p>
+<p>Starting Soon | Limited Seats</p>
 
 <button onclick="visitWebsite()">Enroll Now</button>
 
@@ -21,8 +53,7 @@
 
 </div>
 
-
-<!-- 📚 Recorded Courses Section -->
+<!-- RECORDED -->
 <div class="recorded-section">
 
 <h3>📚 Recorded Batches</h3>
@@ -31,19 +62,19 @@
 
 <div class="course-card">
 <h4>Manual Testing</h4>
-<p>Learn fundamentals of software testing from scratch.</p>
+<p>Learn testing basics from scratch.</p>
 <button onclick="visitWebsite()">View Course</button>
 </div>
 
 <div class="course-card">
 <h4>API Testing</h4>
-<p>Master REST APIs, Postman & real-world scenarios.</p>
+<p>Master REST APIs & Postman.</p>
 <button onclick="visitWebsite()">View Course</button>
 </div>
 
 <div class="course-card">
 <h4>Playwright Testing</h4>
-<p>Automation testing using modern tools & frameworks.</p>
+<p>Automation with modern tools.</p>
 <button onclick="visitWebsite()">View Course</button>
 </div>
 
@@ -52,3 +83,36 @@
 </div>
 
 </section>
+
+<!-- YOUTUBE -->
+<section id="youtube">
+
+<h2>Watch Our Tutorials</h2>
+
+<div class="video-container">
+
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed?listType=user_uploads&list=Techbharat12"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
+</div>
+
+</section>
+
+<!-- CTA -->
+<section class="cta">
+<h2>Start Your Tech Journey Today</h2>
+<button onclick="visitWebsite()">Join TechBharat</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 TechBharat</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
