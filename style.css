@@ -1,67 +1,111 @@
-/* Live Batch Section */
-.live-batch{
-margin-top:40px;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#f5f7fb;
+}
+
+/* HEADER */
+header{
+display:flex;
+justify-content:space-between;
+padding:20px 10%;
+background:#111;
+color:white;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+}
+
+/* HERO */
+.hero{
+text-align:center;
+padding:100px 20px;
+background:linear-gradient(135deg,#6a11cb,#2575fc);
+color:white;
+}
+
+button{
+padding:10px 20px;
+margin-top:15px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+background:#111;
+color:white;
+}
+
+/* COURSES */
+#courses{
+padding:60px 20px;
 text-align:center;
 }
 
+/* LIVE BATCH */
 .live-banner{
 margin:30px auto;
 padding:40px;
-max-width:700px;
-border-radius:15px;
-color:white;
+max-width:600px;
+border-radius:10px;
 background:linear-gradient(135deg,#ff512f,#dd2476);
-box-shadow:0 10px 30px rgba(0,0,0,0.2);
+color:white;
 }
 
-.live-banner h2{
-font-size:28px;
-}
-
-.live-banner p{
-margin-top:10px;
-font-size:16px;
-}
-
-.live-banner button{
-margin-top:15px;
-background:white;
-color:#dd2476;
-font-weight:bold;
-}
-
-
-/* Recorded Section */
-.recorded-section{
-margin-top:60px;
-text-align:center;
+/* RECORDED */
+.course-container{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:30px;
 }
 
 .course-card{
 background:white;
-padding:25px;
-width:260px;
-border-radius:12px;
-box-shadow:0 10px 20px rgba(0,0,0,0.1);
+padding:20px;
+width:250px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
 transition:0.3s;
-}
-
-.course-card h4{
-margin-bottom:10px;
-}
-
-.course-card p{
-font-size:14px;
-color:#555;
-}
-
-.course-card button{
-margin-top:10px;
-background:#2575fc;
-color:white;
 }
 
 .course-card:hover{
 transform:translateY(-10px);
-box-shadow:0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* YOUTUBE */
+#youtube{
+padding:60px 20px;
+text-align:center;
+}
+
+/* CTA */
+.cta{
+padding:60px;
+background:#222;
+color:white;
+text-align:center;
+}
+
+/* FOOTER */
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+.course-container{
+flex-direction:column;
+align-items:center;
+}
 }
