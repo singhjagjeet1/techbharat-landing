@@ -2,7 +2,7 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, sans-serif;
+font-family:Arial;
 }
 
 body{
@@ -32,9 +32,10 @@ background:linear-gradient(135deg,#6a11cb,#2575fc);
 color:white;
 }
 
+/* BUTTON */
 button{
 padding:10px 20px;
-margin-top:15px;
+margin-top:10px;
 border:none;
 border-radius:5px;
 cursor:pointer;
@@ -42,24 +43,25 @@ background:#111;
 color:white;
 }
 
-/* COURSES */
-#courses{
+/* SECTIONS */
+section{
 padding:60px 20px;
 text-align:center;
 }
 
-/* LIVE BATCH */
+/* LIVE */
 .live-banner{
 margin:30px auto;
-padding:40px;
+padding:30px;
 max-width:600px;
 border-radius:10px;
 background:linear-gradient(135deg,#ff512f,#dd2476);
 color:white;
 }
 
-/* RECORDED */
-.course-container{
+/* CARDS */
+.course-container,
+.service-container{
 display:flex;
 justify-content:center;
 gap:20px;
@@ -67,7 +69,8 @@ flex-wrap:wrap;
 margin-top:30px;
 }
 
-.course-card{
+.course-card,
+.service-card{
 background:white;
 padding:20px;
 width:250px;
@@ -76,35 +79,34 @@ box-shadow:0 5px 15px rgba(0,0,0,0.1);
 transition:0.3s;
 }
 
-.course-card:hover{
+.course-card:hover,
+.service-card:hover{
 transform:translateY(-10px);
 }
 
 /* YOUTUBE */
-#youtube{
-padding:60px 20px;
-text-align:center;
+iframe{
+margin-top:20px;
+max-width:100%;
 }
 
 /* CTA */
 .cta{
-padding:60px;
 background:#222;
 color:white;
-text-align:center;
 }
 
 /* FOOTER */
 footer{
 background:#111;
 color:white;
-text-align:center;
 padding:20px;
 }
 
 /* MOBILE */
 @media(max-width:768px){
-.course-container{
+.course-container,
+.service-container{
 flex-direction:column;
 align-items:center;
 }
